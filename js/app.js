@@ -3,6 +3,8 @@ import {
   initMap,
   renderPools,
   setOrigin,
+  setDestination,
+  clearDestination,
   fitTo,
   focusPool,
   invalidateSize,
@@ -16,12 +18,21 @@ const $ = (id) => document.getElementById(id);
 const state = {
   data: null,
   origin: null, // {lat, lng, label}
+  destination: null, // {lat, lng, label} | null — optional "where to next"
   mode: 'now', // 'now' | 'plan'
   planDate: null,
   planTime: '14:00',
   shown: [], // pools currently displayed (open at target time)
   token: 0, // bumped to cancel stale transit batches
   cards: new Map(), // slug → card element
+};
+
+const safe = async (fn) => {
+  try {
+    return await fn();
+  } catch {
+    return null;
+  }
 };
 
 // ---------- helpers ----------
@@ -46,25 +57,48 @@ function target() {
   return { ymd: n.ymd, minutes: n.minutes, departureISO: undefined };
 }
 
-function googleTransitUrl(pool) {
-  const dest = `${pool.lat},${pool.lng}`;
-  const base = `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=transit`;
-  return state.origin ? `${base}&origin=${state.origin.lat},${state.origin.lng}` : base;
+// Google Maps transit directions deep link. from/to = {lat,lng}; a null `from`
+// lets Google use the device's current location.
+function gmapsTransit(from, to) {
+  let u = `https://www.google.com/maps/dir/?api=1&destination=${to.lat},${to.lng}&travelmode=transit`;
+  if (from) u += `&origin=${from.lat},${from.lng}`;
+  return u;
 }
 
+const linesOf = (leg) =>
+  leg && leg.ridden && leg.ridden.length ? leg.ridden.map((r) => r.name).join(' › ') : '';
+
+// Badge shows total trip time: start→pool (→destination if set).
 function travelBadge(pool) {
   const t = pool.travel;
   if (!state.origin) return '<span class="badge badge--none">Start wählen</span>';
   if (!t) return '<span class="badge badge--loading">…</span>';
-  if (t.error || t.durationMin == null)
-    return '<span class="badge badge--none">keine Route</span>';
-  return `<span class="badge badge--time">🚆 ${t.durationMin} min</span>`;
+  if (t.total == null) return '<span class="badge badge--none">keine Route</span>';
+  return `<span class="badge badge--time">🚆 ${t.total} min</span>`;
 }
 
-function linesText(pool) {
+// Secondary line: category + (in destination mode) the per-leg breakdown.
+function travelDetail(pool) {
+  const k = kindOf(pool.kind);
   const t = pool.travel;
-  if (!t || !t.ridden || !t.ridden.length) return '';
-  return t.ridden.map((r) => r.name).join(' › ');
+  if (!state.destination) {
+    const lines = linesOf(t && t.legA);
+    return `${k.label}${lines ? ' · ' + lines : ''}`;
+  }
+  if (!t || t.total == null) return k.label;
+  return `${k.label} · ${t.legA.durationMin} min hin · ${t.legB.durationMin} min weiter`;
+}
+
+// Directions links for a pool card / popup (1 link, or 2 when a destination is set).
+function routeLinks(pool, sep = ' ') {
+  if (!state.destination) {
+    return `<a href="${gmapsTransit(state.origin, pool)}" target="_blank" rel="noopener">Route (ÖPNV) ↗</a>`;
+  }
+  return (
+    `<a href="${gmapsTransit(state.origin, pool)}" target="_blank" rel="noopener">→ Bad ↗</a>` +
+    sep +
+    `<a href="${gmapsTransit(pool, state.destination)}" target="_blank" rel="noopener">→ Ziel ↗</a>`
+  );
 }
 
 // ---------- rendering ----------
@@ -72,7 +106,6 @@ function cardHtml(pool) {
   const k = kindOf(pool.kind);
   const s = pool.status;
   const left = s.minutesLeft != null ? ` <span class="left">(noch ${humanDuration(s.minutesLeft)})</span>` : '';
-  const lines = linesText(pool);
   return `
     <div class="pool-card__top">
       <div class="pool-card__name">
@@ -81,10 +114,10 @@ function cardHtml(pool) {
       ${travelBadge(pool)}
     </div>
     <div class="pool-card__hours">Geöffnet bis ${s.until}${left}</div>
-    <div class="pool-card__meta">${k.label}${lines ? ' · ' + lines : ''}</div>
+    <div class="pool-card__meta">${travelDetail(pool)}</div>
     <div class="pool-card__links">
       <a href="${pool.url}" target="_blank" rel="noopener">Offizielle Seite ↗</a>
-      <a href="${googleTransitUrl(pool)}" target="_blank" rel="noopener">Route (ÖPNV) ↗</a>
+      ${routeLinks(pool)}
     </div>`;
 }
 
@@ -129,12 +162,18 @@ function renderMarkers() {
     (pool) => {
       const s = pool.status;
       const t = pool.travel;
-      const travelLine =
-        state.origin && t && t.durationMin != null
-          ? `<div class="popup__row">🚆 ${t.durationMin} min mit ÖPNV${
-              linesText(pool) ? ` · ${linesText(pool)}` : ''
-            }</div>`
-          : '';
+      let travelLine = '';
+      if (state.origin && t && t.total != null) {
+        if (state.destination) {
+          travelLine =
+            `<div class="popup__row">🚆 ${t.total} min gesamt · ` +
+            `${t.legA.durationMin} min hin, ${t.legB.durationMin} min weiter</div>`;
+        } else {
+          travelLine = `<div class="popup__row">🚆 ${t.total} min mit ÖPNV${
+            linesOf(t.legA) ? ` · ${linesOf(t.legA)}` : ''
+          }</div>`;
+        }
+      }
       return `
         <div class="popup__name">${pool.name}</div>
         <div class="popup__row">Geöffnet bis <b>${s.until}</b>${
@@ -143,7 +182,7 @@ function renderMarkers() {
         ${travelLine}
         <div class="popup__links">
           <a href="${pool.url}" target="_blank" rel="noopener">Seite ↗</a>
-          <a href="${googleTransitUrl(pool)}" target="_blank" rel="noopener">Route ↗</a>
+          ${routeLinks(pool)}
         </div>`;
     },
     (slug) => selectPool(slug, false)
@@ -163,8 +202,8 @@ function selectPool(slug, fromList) {
 function sortShown(byTravel) {
   state.shown.sort((a, b) => {
     if (byTravel) {
-      const ta = a.travel && a.travel.durationMin != null ? a.travel.durationMin : Infinity;
-      const tb = b.travel && b.travel.durationMin != null ? b.travel.durationMin : Infinity;
+      const ta = a.travel && a.travel.total != null ? a.travel.total : Infinity;
+      const tb = b.travel && b.travel.total != null ? b.travel.total : Infinity;
       if (ta !== tb) return ta - tb;
     }
     if (state.origin && a.dist != null && b.dist != null) return a.dist - b.dist;
@@ -173,11 +212,15 @@ function sortShown(byTravel) {
 }
 
 function setSortNote(byTravel) {
-  $('results-sort').textContent = state.origin
-    ? byTravel
-      ? 'nach Fahrzeit'
-      : 'nach Entfernung'
-    : '';
+  if (!state.origin) {
+    $('results-sort').textContent = '';
+    return;
+  }
+  if (!byTravel) {
+    $('results-sort').textContent = 'nach Entfernung';
+    return;
+  }
+  $('results-sort').textContent = state.destination ? 'nach Gesamtzeit (hin + weiter)' : 'nach Fahrzeit';
 }
 
 // ---------- the main compute pass ----------
@@ -204,21 +247,43 @@ async function recompute() {
   setSortNote(false);
   renderList();
   renderMarkers();
-  fitTo(state.shown, state.origin);
+  fitTo(state.shown, state.origin, state.destination);
 
   // 2. transit times (only when we know where the user starts)
   if (!state.origin || !open.length) return;
+  const dest = state.destination;
 
-  const tasks = open.map((pool) => () => planJourney(state.origin, pool, departureISO));
+  // Each pool: leg A = start→pool, plus leg B = pool→destination when one is set.
+  // Both legs use the same base departure time (an approximation — we don't model
+  // how long you swim — but it's what makes a pool "well-connected to both").
+  const tasks = open.map((pool) => async () => {
+    const a = await safe(() => planJourney(state.origin, pool, departureISO));
+    const b = dest ? await safe(() => planJourney(pool, dest, departureISO)) : undefined;
+    return { a, b };
+  });
+
   await runPool(tasks, (i, value) => {
     if (myToken !== state.token) return; // stale batch — ignore
     const pool = open[i];
-    pool.travel = value instanceof Error ? { error: true } : value || { error: true };
+    const r = value instanceof Error ? {} : value || {};
+    const legA = r.a ? { durationMin: r.a.durationMin, ridden: r.a.ridden } : { error: true };
+    let legB = null;
+    let total = null;
+    if (dest) {
+      legB = r.b ? { durationMin: r.b.durationMin, ridden: r.b.ridden } : { error: true };
+      total =
+        legA.durationMin != null && legB.durationMin != null
+          ? legA.durationMin + legB.durationMin
+          : null;
+    } else {
+      total = legA.durationMin != null ? legA.durationMin : null;
+    }
+    pool.travel = { legA, legB, total };
     refreshCard(pool);
   });
 
   if (myToken !== state.token) return;
-  // 3. final re-sort by fastest journey + re-render (markers get rank numbers)
+  // 3. final re-sort by fastest total trip + re-render (markers get rank numbers)
   sortShown(true);
   setSortNote(true);
   renderList();
@@ -273,6 +338,51 @@ async function geocodeInput() {
   }
 }
 
+// ---------- destination handling ----------
+function setDestinationState(lat, lng, label) {
+  state.destination = { lat, lng, label };
+  const el = $('dest-status');
+  el.textContent = '🏁 ' + label;
+  el.className = 'origin-status is-set';
+  $('dest-clear').hidden = false;
+  setDestination(lat, lng, label);
+  recompute();
+}
+
+function clearDestinationState() {
+  const had = !!state.destination;
+  state.destination = null;
+  $('dest-input').value = '';
+  const el = $('dest-status');
+  el.textContent = '';
+  el.className = 'origin-status';
+  $('dest-clear').hidden = true;
+  clearDestination();
+  if (had) recompute();
+}
+
+async function geocodeDest() {
+  const q = $('dest-input').value.trim();
+  if (!q) {
+    clearDestinationState();
+    return;
+  }
+  const el = $('dest-status');
+  el.textContent = 'Suche Ort…';
+  el.className = 'origin-status';
+  try {
+    const r = await geocode(q);
+    if (r) setDestinationState(r.lat, r.lng, r.label);
+    else {
+      el.textContent = 'Ort nicht gefunden.';
+      el.className = 'origin-status is-error';
+    }
+  } catch {
+    el.textContent = 'Suche fehlgeschlagen.';
+    el.className = 'origin-status is-error';
+  }
+}
+
 // ---------- controls wiring ----------
 function setupControls() {
   $('locate-btn').addEventListener('click', useGeolocation);
@@ -283,6 +393,22 @@ function setupControls() {
     }
   });
   $('origin-input').addEventListener('change', geocodeInput);
+
+  $('dest-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      geocodeDest();
+    }
+  });
+  $('dest-input').addEventListener('change', geocodeDest);
+  $('dest-clear').addEventListener('click', clearDestinationState);
+
+  // keep the Leaflet canvas correct on viewport changes (resize / orientation)
+  let resizeT;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeT);
+    resizeT = setTimeout(invalidateSize, 200);
+  });
 
   const setMode = (mode) => {
     state.mode = mode;

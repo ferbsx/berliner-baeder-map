@@ -55,6 +55,20 @@
           </div>
 
           <div class="field">
+            <label for="dest-input">Ziel danach <span class="opt">(optional)</span></label>
+            <div class="origin-row">
+              <input
+                id="dest-input"
+                type="text"
+                placeholder="z. B. Restaurant, Adresse…"
+                autocomplete="off"
+              />
+              <button id="dest-clear" type="button" title="Ziel entfernen" hidden>✕</button>
+            </div>
+            <div class="origin-status" id="dest-status"></div>
+          </div>
+
+          <div class="field">
             <label>Zeitpunkt</label>
             <div class="seg" role="tablist">
               <button class="seg__btn is-active" id="mode-now" role="tab" aria-selected="true">

@@ -6,6 +6,7 @@ let map;
 let markerLayer;
 const markers = new Map(); // slug → L.marker
 let originMarker;
+let destMarker;
 
 export function initMap() {
   const opnv = L.tileLayer('https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png', {
@@ -71,10 +72,26 @@ export function setOrigin(lat, lng, label) {
   originMarker.bindPopup(`<b>Start:</b> ${label || 'gewählter Ort'}`);
 }
 
-// Fit the view to origin + all pool markers.
-export function fitTo(pools, origin) {
+export function setDestination(lat, lng, label) {
+  if (destMarker) map.removeLayer(destMarker);
+  destMarker = L.marker([lat, lng], {
+    icon: L.divIcon({ className: '', html: '<div class="dest-pin"></div>', iconSize: [18, 18], iconAnchor: [9, 9] }),
+    title: label || 'Ziel',
+    zIndexOffset: 1000,
+  }).addTo(map);
+  destMarker.bindPopup(`<b>Ziel:</b> ${label || 'gewählter Ort'}`);
+}
+
+export function clearDestination() {
+  if (destMarker) map.removeLayer(destMarker);
+  destMarker = null;
+}
+
+// Fit the view to origin + destination + all pool markers.
+export function fitTo(pools, origin, destination) {
   const pts = pools.map((p) => [p.lat, p.lng]);
   if (origin) pts.push([origin.lat, origin.lng]);
+  if (destination) pts.push([destination.lat, destination.lng]);
   if (!pts.length) return;
   if (pts.length === 1) {
     map.setView(pts[0], 13);

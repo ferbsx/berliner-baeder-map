@@ -12,6 +12,9 @@ from your location — on a transit‑focused map of Berlin.
   by a GitHub Action **every 30 minutes** and committed as `data/pools.json`.
 - 💸 **Excludes pools with separate/extra entrance pricing** (e.g. Strandbad Halensee) — see below.
 - 🧭 Two modes: **Jetzt** (open now from your location) and **Planen** (pick a start, day & time).
+- 🍽️ **Optional destination** ("Ziel danach"): add a place you're heading afterwards (e.g. a
+  restaurant) and pools are ranked by **total** start → pool → destination transit time, so you
+  find the one best-connected to both. Each leg gets its own Google Maps directions link.
 
 Everything runs client‑side, so it hosts for free on **GitHub Pages**.
 
