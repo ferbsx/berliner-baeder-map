@@ -57,47 +57,59 @@ function target() {
   return { ymd: n.ymd, minutes: n.minutes, departureISO: undefined };
 }
 
-// Google Maps transit directions deep link. from/to = {lat,lng}; a null `from`
-// lets Google use the device's current location.
-function gmapsTransit(from, to) {
-  let u = `https://www.google.com/maps/dir/?api=1&destination=${to.lat},${to.lng}&travelmode=transit`;
+// Google Maps directions deep link. from/to = {lat,lng}; null `from` = device location.
+function gmapsDir(from, to, mode = 'transit') {
+  let u = `https://www.google.com/maps/dir/?api=1&destination=${to.lat},${to.lng}&travelmode=${mode}`;
   if (from) u += `&origin=${from.lat},${from.lng}`;
   return u;
 }
 
 const linesOf = (leg) =>
   leg && leg.ridden && leg.ridden.length ? leg.ridden.map((r) => r.name).join(' › ') : '';
+const legIcon = (leg) => (leg && leg.walkOnly ? '🚶' : '🚆');
+const fmtDist = (km) => (km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`);
 
-// Badge shows total trip time: start→pool (→destination if set).
+// Badge shows total trip time: start→pool (→destination if set). Walk-only trips
+// get a 🚶 instead of 🚆 (so a pool right next door reads as a short walk, not "keine Route").
 function travelBadge(pool) {
   const t = pool.travel;
   if (!state.origin) return '<span class="badge badge--none">Start wählen</span>';
   if (!t) return '<span class="badge badge--loading">…</span>';
   if (t.total == null) return '<span class="badge badge--none">keine Route</span>';
-  return `<span class="badge badge--time">🚆 ${t.total} min</span>`;
+  const walk = t.walkOnly;
+  return `<span class="badge ${walk ? 'badge--walk' : 'badge--time'}">${walk ? '🚶' : '🚆'} ${t.total} min</span>`;
 }
 
-// Secondary line: category + (in destination mode) the per-leg breakdown.
+// Secondary line: category + transit lines / "zu Fuß" / per-leg breakdown.
 function travelDetail(pool) {
   const k = kindOf(pool.kind);
   const t = pool.travel;
   if (!state.destination) {
-    const lines = linesOf(t && t.legA);
+    if (!t || t.legA.error) return k.label;
+    if (t.legA.walkOnly) {
+      const d = pool.dist != null ? ` (${fmtDist(pool.dist)})` : '';
+      return `${k.label} · 🚶 zu Fuß${d}`;
+    }
+    const lines = linesOf(t.legA);
     return `${k.label}${lines ? ' · ' + lines : ''}`;
   }
   if (!t || t.total == null) return k.label;
-  return `${k.label} · ${t.legA.durationMin} min hin · ${t.legB.durationMin} min weiter`;
+  return `${k.label} · ${legIcon(t.legA)} ${t.legA.durationMin} min hin · ${legIcon(t.legB)} ${t.legB.durationMin} min weiter`;
 }
 
-// Directions links for a pool card / popup (1 link, or 2 when a destination is set).
-function routeLinks(pool, sep = ' ') {
+// Directions links (1 link, or 2 when a destination is set). A walk-only leg
+// opens Google Maps in walking mode and is labelled accordingly.
+function routeLinks(pool) {
+  const t = pool.travel;
+  const aMode = t && t.legA && t.legA.walkOnly ? 'walking' : 'transit';
   if (!state.destination) {
-    return `<a href="${gmapsTransit(state.origin, pool)}" target="_blank" rel="noopener">Route (ÖPNV) ↗</a>`;
+    const label = aMode === 'walking' ? 'Fußweg ↗' : 'Route (ÖPNV) ↗';
+    return `<a href="${gmapsDir(state.origin, pool, aMode)}" target="_blank" rel="noopener">${label}</a>`;
   }
+  const bMode = t && t.legB && t.legB.walkOnly ? 'walking' : 'transit';
   return (
-    `<a href="${gmapsTransit(state.origin, pool)}" target="_blank" rel="noopener">→ Bad ↗</a>` +
-    sep +
-    `<a href="${gmapsTransit(pool, state.destination)}" target="_blank" rel="noopener">→ Ziel ↗</a>`
+    `<a href="${gmapsDir(state.origin, pool, aMode)}" target="_blank" rel="noopener">→ Bad ↗</a> ` +
+    `<a href="${gmapsDir(pool, state.destination, bMode)}" target="_blank" rel="noopener">→ Ziel ↗</a>`
   );
 }
 
@@ -166,8 +178,12 @@ function renderMarkers() {
       if (state.origin && t && t.total != null) {
         if (state.destination) {
           travelLine =
-            `<div class="popup__row">🚆 ${t.total} min gesamt · ` +
-            `${t.legA.durationMin} min hin, ${t.legB.durationMin} min weiter</div>`;
+            `<div class="popup__row">${t.walkOnly ? '🚶' : '🚆'} ${t.total} min gesamt · ` +
+            `${legIcon(t.legA)} ${t.legA.durationMin} hin, ${legIcon(t.legB)} ${t.legB.durationMin} weiter</div>`;
+        } else if (t.walkOnly) {
+          travelLine = `<div class="popup__row">🚶 ${t.total} min zu Fuß${
+            pool.dist != null ? ` (${fmtDist(pool.dist)})` : ''
+          }</div>`;
         } else {
           travelLine = `<div class="popup__row">🚆 ${t.total} min mit ÖPNV${
             linesOf(t.legA) ? ` · ${linesOf(t.legA)}` : ''
@@ -266,19 +282,24 @@ async function recompute() {
     if (myToken !== state.token) return; // stale batch — ignore
     const pool = open[i];
     const r = value instanceof Error ? {} : value || {};
-    const legA = r.a ? { durationMin: r.a.durationMin, ridden: r.a.ridden } : { error: true };
+    const mkLeg = (x) =>
+      x ? { durationMin: x.durationMin, ridden: x.ridden, walkOnly: !!x.walkOnly } : { error: true };
+    const legA = mkLeg(r.a);
     let legB = null;
     let total = null;
+    let walkOnly = false;
     if (dest) {
-      legB = r.b ? { durationMin: r.b.durationMin, ridden: r.b.ridden } : { error: true };
+      legB = mkLeg(r.b);
       total =
         legA.durationMin != null && legB.durationMin != null
           ? legA.durationMin + legB.durationMin
           : null;
+      walkOnly = !!legA.walkOnly && !!legB.walkOnly;
     } else {
       total = legA.durationMin != null ? legA.durationMin : null;
+      walkOnly = !!legA.walkOnly;
     }
-    pool.travel = { legA, legB, total };
+    pool.travel = { legA, legB, total, walkOnly };
     refreshCard(pool);
   });
 
@@ -297,6 +318,7 @@ function setOriginState(lat, lng, label, statusClass = 'is-set') {
   el.textContent = label;
   el.className = 'origin-status ' + statusClass;
   setOrigin(lat, lng, label);
+  updateFavButtons();
   recompute();
 }
 
@@ -346,6 +368,7 @@ function setDestinationState(lat, lng, label) {
   el.className = 'origin-status is-set';
   $('dest-clear').hidden = false;
   setDestination(lat, lng, label);
+  updateFavButtons();
   recompute();
 }
 
@@ -358,6 +381,7 @@ function clearDestinationState() {
   el.className = 'origin-status';
   $('dest-clear').hidden = true;
   clearDestination();
+  updateFavButtons();
   if (had) recompute();
 }
 
@@ -383,6 +407,88 @@ async function geocodeDest() {
   }
 }
 
+// ---------- favourites (persisted in localStorage) ----------
+const FAVS_KEY = 'baeder.favs.v1';
+const esc = (s) =>
+  String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+function loadFavs() {
+  try {
+    return JSON.parse(localStorage.getItem(FAVS_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+function storeFavs(list) {
+  try {
+    localStorage.setItem(FAVS_KEY, JSON.stringify(list));
+  } catch {
+    /* storage unavailable (e.g. private mode) — favourites just won't persist */
+  }
+}
+function newId() {
+  return (crypto.randomUUID && crypto.randomUUID()) || `${Date.now()}-${Math.round(Math.random() * 1e6)}`;
+}
+function sameSpot(a, b) {
+  return a && b && Math.abs(a.lat - b.lat) < 3e-4 && Math.abs(a.lng - b.lng) < 3e-4;
+}
+
+function applyFav(fav, which) {
+  if (which === 'dest') {
+    $('dest-input').value = fav.name;
+    setDestinationState(fav.lat, fav.lng, fav.name);
+  } else {
+    $('origin-input').value = fav.name;
+    setOriginState(fav.lat, fav.lng, fav.name);
+  }
+}
+
+function addFav(which) {
+  const loc = which === 'dest' ? state.destination : state.origin;
+  if (!loc) {
+    const el = $(which === 'dest' ? 'dest-status' : 'origin-status');
+    el.textContent = which === 'dest' ? 'Erst ein Ziel wählen.' : 'Erst einen Start wählen.';
+    el.className = 'origin-status is-error';
+    return;
+  }
+  const suggested = (loc.label || '').replace(/^🏁\s*/, '');
+  const name = (window.prompt('Name für diesen Favoriten:', suggested) || '').trim();
+  if (!name) return;
+  const favs = loadFavs();
+  favs.push({ id: newId(), name, lat: loc.lat, lng: loc.lng });
+  storeFavs(favs);
+  renderFavs();
+}
+
+function deleteFav(id) {
+  storeFavs(loadFavs().filter((f) => f.id !== id));
+  renderFavs();
+}
+
+function renderFavs() {
+  const favs = loadFavs();
+  $('favs-field').hidden = favs.length === 0;
+  const ul = $('favs');
+  ul.innerHTML = '';
+  for (const f of favs) {
+    const li = document.createElement('li');
+    li.className = 'favs__row';
+    li.innerHTML =
+      `<span class="favs__name" title="${esc(f.name)}">${esc(f.name)}</span>` +
+      `<button data-act="start" data-id="${f.id}">Start</button>` +
+      `<button data-act="dest" data-id="${f.id}">Ziel</button>` +
+      `<button data-act="del" data-id="${f.id}" class="favs__del" title="Favorit löschen">✕</button>`;
+    ul.appendChild(li);
+  }
+  updateFavButtons();
+}
+
+function updateFavButtons() {
+  const favs = loadFavs();
+  $('origin-fav').classList.toggle('is-set', favs.some((f) => sameSpot(f, state.origin)));
+  $('dest-fav').classList.toggle('is-set', favs.some((f) => sameSpot(f, state.destination)));
+}
+
 // ---------- controls wiring ----------
 function setupControls() {
   $('locate-btn').addEventListener('click', useGeolocation);
@@ -402,6 +508,20 @@ function setupControls() {
   });
   $('dest-input').addEventListener('change', geocodeDest);
   $('dest-clear').addEventListener('click', clearDestinationState);
+
+  $('origin-fav').addEventListener('click', () => addFav('start'));
+  $('dest-fav').addEventListener('click', () => addFav('dest'));
+  $('favs').addEventListener('click', (e) => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    const { act, id } = btn.dataset;
+    if (act === 'del') {
+      deleteFav(id);
+      return;
+    }
+    const fav = loadFavs().find((f) => f.id === id);
+    if (fav) applyFav(fav, act);
+  });
 
   // keep the Leaflet canvas correct on viewport changes (resize / orientation)
   let resizeT;
@@ -468,6 +588,7 @@ async function main() {
   }
   fillPlanDates();
   showFreshness();
+  renderFavs(); // show any saved favourites
   await recompute(); // renders open-now list immediately (no travel times yet)
   useGeolocation(); // then try to locate the user → fills in travel times
   setTimeout(invalidateSize, 200); // ensure map sizes correctly after layout

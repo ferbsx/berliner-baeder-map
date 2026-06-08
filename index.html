@@ -50,6 +50,9 @@
               <button id="locate-btn" type="button" title="Meinen Standort verwenden">
                 📍
               </button>
+              <button id="origin-fav" type="button" class="fav-btn" title="Startpunkt als Favorit speichern">
+                ☆
+              </button>
             </div>
             <div class="origin-status" id="origin-status">Standort wird ermittelt…</div>
           </div>
@@ -63,9 +66,17 @@
                 placeholder="z. B. Restaurant, Adresse…"
                 autocomplete="off"
               />
+              <button id="dest-fav" type="button" class="fav-btn" title="Ziel als Favorit speichern">
+                ☆
+              </button>
               <button id="dest-clear" type="button" title="Ziel entfernen" hidden>✕</button>
             </div>
             <div class="origin-status" id="dest-status"></div>
+          </div>
+
+          <div class="field" id="favs-field" hidden>
+            <label>Favoriten</label>
+            <ul class="favs" id="favs"></ul>
           </div>
 
           <div class="field">

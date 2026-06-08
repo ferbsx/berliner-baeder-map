@@ -15,6 +15,10 @@ from your location — on a transit‑focused map of Berlin.
 - 🍽️ **Optional destination** ("Ziel danach"): add a place you're heading afterwards (e.g. a
   restaurant) and pools are ranked by **total** start → pool → destination transit time, so you
   find the one best-connected to both. Each leg gets its own Google Maps directions link.
+- ⭐ **Favourite places**: save your common start/end points (home, work, a go-to restaurant) with
+  the ☆ button and reuse them as start or destination in one tap. Stored locally in your browser.
+- 🚶 Pools within walking distance show the **walking time** ("zu Fuß") instead of being marked
+  "no route" — so a pool right next door reads as a short walk, not a dead end.
 
 Everything runs client‑side, so it hosts for free on **GitHub Pages**.
 

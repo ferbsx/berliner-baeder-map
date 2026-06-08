@@ -159,6 +159,74 @@ select:focus {
 #dest-clear:hover {
   background: #f1f5f9;
 }
+.fav-btn {
+  flex: 0 0 auto;
+  width: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-size: 17px;
+  color: #94a3b8;
+  cursor: pointer;
+}
+.fav-btn:hover {
+  background: #fffbeb;
+  color: #d97706;
+}
+.fav-btn.is-set {
+  color: #f59e0b;
+}
+
+/* favourites list */
+.favs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.favs__row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 5px 6px 5px 10px;
+}
+.favs__name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.favs__name::before {
+  content: '★';
+  color: #f59e0b;
+  margin-right: 6px;
+}
+.favs__row button {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: #f8fafc;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+}
+.favs__row button.favs__del {
+  color: var(--muted);
+  padding: 3px 7px;
+}
+.favs__row button:hover {
+  background: #eef2ff;
+}
 .origin-status {
   margin-top: 6px;
   font-size: 12px;
@@ -271,6 +339,10 @@ select:focus {
 .badge--time {
   background: #eef2ff;
   color: #3730a3;
+}
+.badge--walk {
+  background: #dcfce7;
+  color: #166534;
 }
 .badge--loading {
   background: #f1f5f9;
