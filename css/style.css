@@ -467,21 +467,34 @@ select:focus {
 
 /* ---------- responsive ---------- */
 @media (max-width: 820px) {
+  /* Let the whole document scroll naturally instead of locking to the viewport
+     height with a cramped inner scroll area for the pool list. Stay flex-column
+     (so `order` keeps the map on top) but give everything its natural height. */
+  html,
   body {
-    height: 100dvh;
+    height: auto;
+  }
+  body {
+    min-height: 100dvh;
   }
   .layout {
     flex-direction: column;
   }
+  .map-wrap {
+    order: 1;
+    flex: 0 0 auto;
+    height: 42vh;
+    min-height: 240px;
+  }
   .sidebar {
-    width: 100%;
-    flex: 1 1 auto;
     order: 2;
+    width: 100%;
+    flex: 0 0 auto;
     border-right: 0;
   }
-  .map-wrap {
-    flex: 0 0 42vh;
-    order: 1;
+  /* the page scrolls, so the list expands to its content rather than scrolling internally */
+  .pool-list {
+    overflow: visible;
   }
   .topbar__sub {
     display: none;
