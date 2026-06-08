@@ -1,0 +1,52 @@
+name: Refresh opening hours
+
+# Re-scrapes berlinerbaeder.de every 30 minutes and commits data/pools.json.
+# Because GitHub Pages serves from this branch, a changed commit redeploys the
+# site automatically — so visitors always get near-current hours.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'scraper/**'
+      - '.github/workflows/scrape.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install scraper deps
+        working-directory: scraper
+        run: npm ci
+
+      - name: Scrape opening hours
+        working-directory: scraper
+        run: node scrape.mjs
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain data/pools.json)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/pools.json
+            git commit -m "data: refresh opening hours ($(date -u +%FT%TZ))"
+            git push
+          else
+            echo "No change in opening hours."
+          fi

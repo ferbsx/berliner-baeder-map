@@ -1,0 +1,378 @@
+[
+  {
+    "slug": "kinderbad-marzahn-platsch",
+    "name": "Kinderbad Marzahn (Platsch)",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kinderbad-marzahn-platsch/",
+    "lat": 52.552005,
+    "lng": 13.562463,
+    "kind": "kids"
+  },
+  {
+    "slug": "kinderbad-monbijou",
+    "name": "Kinderbad Monbijou",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kinderbad-monbijou/",
+    "lat": 52.5227,
+    "lng": 13.396577,
+    "kind": "kids"
+  },
+  {
+    "slug": "kleine-schwimmhalle-wuhlheide",
+    "name": "Kleine Schwimmhalle Wuhlheide",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kleine-schwimmhalle-wuhlheide/",
+    "lat": 52.46003,
+    "lng": 13.539576,
+    "kind": "indoor"
+  },
+  {
+    "slug": "kombibad-gropiusstadt-sommerbad",
+    "name": "Kombibad Gropiusstadt - Sommerbad",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-sommerbad/",
+    "lat": 52.427509,
+    "lng": 13.470635,
+    "kind": "summer"
+  },
+  {
+    "slug": "kombibad-seestrasse-sommerbad",
+    "name": "Kombibad Seestraße - Sommerbad",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-seestrasse-sommerbad/",
+    "lat": 52.55687,
+    "lng": 13.36132,
+    "kind": "summer"
+  },
+  {
+    "slug": "kombibad-spandau-sued-hallenbad",
+    "name": "Kombibad Spandau Süd - Hallenbad",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-spandau-sued-hallenbad/",
+    "lat": 52.518209,
+    "lng": 13.188406,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimm-und-sprunghalle-im-europasportpark-sse",
+    "name": "Schwimm- und Sprunghalle im Europasportpark (SSE)",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimm-und-sprunghalle-im-europasportpark-sse/",
+    "lat": 52.529191,
+    "lng": 13.452652,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-allendeviertel",
+    "name": "Schwimmhalle Allendeviertel",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-allendeviertel/",
+    "lat": 52.442396,
+    "lng": 13.587661,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-anton-saefkow-platz",
+    "name": "Schwimmhalle Anton-Saefkow-Platz",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-anton-saefkow-platz/",
+    "lat": 52.530748,
+    "lng": 13.472017,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-baumschulenweg",
+    "name": "Schwimmhalle Baumschulenweg",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-baumschulenweg/",
+    "lat": 52.470149,
+    "lng": 13.494012,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-buch",
+    "name": "Schwimmhalle Buch",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-buch/",
+    "lat": 52.628743,
+    "lng": 13.491862,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-ernst-thaelmann-park",
+    "name": "Schwimmhalle Ernst-Thälmann-Park",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-ernst-thaelmann-park/",
+    "lat": 52.540971,
+    "lng": 13.433781,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-finckensteinallee",
+    "name": "Schwimmhalle Finckensteinallee",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-finckensteinallee/",
+    "lat": 52.431898,
+    "lng": 13.297901,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-fischerinsel",
+    "name": "Schwimmhalle Fischerinsel",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-fischerinsel/",
+    "lat": 52.512486,
+    "lng": 13.404693,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-helene-weigel-platz-helmut-behrendt",
+    "name": "Schwimmhalle Helene-Weigel-Platz \"Helmut Behrendt\"",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-helene-weigel-platz-helmut-behrendt/",
+    "lat": 52.528063,
+    "lng": 13.541945,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-kaulsdorf",
+    "name": "Schwimmhalle Kaulsdorf",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-kaulsdorf/",
+    "lat": 52.520992,
+    "lng": 13.585512,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-sewanstrasse",
+    "name": "Schwimmhalle Sewanstraße",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-sewanstrasse/",
+    "lat": 52.495754,
+    "lng": 13.516029,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-thomas-mann-strasse",
+    "name": "Schwimmhalle Thomas-Mann-Straße",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-thomas-mann-strasse/",
+    "lat": 52.543105,
+    "lng": 13.443238,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-zingster-strasse",
+    "name": "Schwimmhalle Zingster Straße",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-zingster-strasse/",
+    "lat": 52.566322,
+    "lng": 13.502977,
+    "kind": "indoor"
+  },
+  {
+    "slug": "sommerbad-humboldthain",
+    "name": "Sommerbad Humboldthain",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-humboldthain/",
+    "lat": 52.545594,
+    "lng": 13.382076,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-kreuzberg",
+    "name": "Sommerbad Kreuzberg",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-kreuzberg/",
+    "lat": 52.4976,
+    "lng": 13.40265,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-mariendorf",
+    "name": "Sommerbad Mariendorf",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-mariendorf/",
+    "lat": 52.4432,
+    "lng": 13.398499,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-olympiastadion",
+    "name": "Sommerbad Olympiastadion",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-olympiastadion/",
+    "lat": 52.5156,
+    "lng": 13.2392,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-pankow",
+    "name": "Sommerbad Pankow",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-pankow/",
+    "lat": 52.575829,
+    "lng": 13.413191,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-staaken-west",
+    "name": "Sommerbad Staaken-West",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-staaken-west/",
+    "lat": 52.533087,
+    "lng": 13.131302,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-wilmersdorf",
+    "name": "Sommerbad Wilmersdorf",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-wilmersdorf/",
+    "lat": 52.481794,
+    "lng": 13.302201,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-wuhlheide",
+    "name": "Sommerbad Wuhlheide",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-wuhlheide/",
+    "lat": 52.470434,
+    "lng": 13.519717,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-am-insulaner",
+    "name": "Sommerbad am Insulaner",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-am-insulaner/",
+    "lat": 52.456256,
+    "lng": 13.352031,
+    "kind": "summer"
+  },
+  {
+    "slug": "sport-und-lehrschwimmhalle-schoeneberg",
+    "name": "Sport- und Lehrschwimmhalle Schöneberg",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sport-und-lehrschwimmhalle-schoeneberg/",
+    "lat": 52.476369,
+    "lng": 13.355115,
+    "kind": "indoor"
+  },
+  {
+    "slug": "sportbad-britz",
+    "name": "Sportbad Britz",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sportbad-britz/",
+    "lat": 52.43991,
+    "lng": 13.474419,
+    "kind": "summer",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "stadtbad-charlottenburg-alte-halle",
+    "name": "Stadtbad Charlottenburg - Alte Halle",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-charlottenburg-alte-halle/",
+    "lat": 52.514525,
+    "lng": 13.308833,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-mitte-james-simon",
+    "name": "Stadtbad Mitte \"James Simon\"",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-mitte-james-simon/",
+    "lat": 52.529544,
+    "lng": 13.393541,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-maerkisches-viertel",
+    "name": "Stadtbad Märkisches Viertel",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-maerkisches-viertel/",
+    "lat": 52.5985,
+    "lng": 13.353264,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-neukoelln",
+    "name": "Stadtbad Neukölln",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-neukoelln/",
+    "lat": 52.479195,
+    "lng": 13.439732,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-tempelhof",
+    "name": "Stadtbad Tempelhof",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tempelhof/",
+    "lat": 52.464016,
+    "lng": 13.389329,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-tiergarten",
+    "name": "Stadtbad Tiergarten",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tiergarten/",
+    "lat": 52.527428,
+    "lng": 13.359621,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-wilmersdorf-ii",
+    "name": "Stadtbad Wilmersdorf II",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-wilmersdorf-ii/",
+    "lat": 52.485942,
+    "lng": 13.301321,
+    "kind": "indoor"
+  },
+  {
+    "slug": "strandbad-friedrichshagen",
+    "name": "Strandbad Friedrichshagen",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-friedrichshagen/",
+    "lat": 52.446502,
+    "lng": 13.630605,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "strandbad-gruenau",
+    "name": "Strandbad Grünau",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-gruenau/",
+    "lat": 52.408631,
+    "lng": 13.604212,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "strandbad-halensee",
+    "name": "Strandbad Halensee",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-halensee/",
+    "lat": 52.494277,
+    "lng": 13.281798,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "strandbad-jungfernheide",
+    "name": "Strandbad Jungfernheide",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-jungfernheide/",
+    "lat": 52.54388,
+    "lng": 13.274772,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "strandbad-orankesee",
+    "name": "Strandbad Orankesee",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-orankesee/",
+    "lat": 52.549382,
+    "lng": 13.485199,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "strandbad-ploetzensee",
+    "name": "Strandbad Plötzensee",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-ploetzensee/",
+    "lat": 52.543325,
+    "lng": 13.328451,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  },
+  {
+    "slug": "strandbad-wannsee",
+    "name": "Strandbad Wannsee",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-wannsee/",
+    "lat": 52.438169,
+    "lng": 13.178038,
+    "kind": "beach"
+  },
+  {
+    "slug": "strandbad-wendenschloss",
+    "name": "Strandbad Wendenschloss",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-wendenschloss/",
+    "lat": 52.415411,
+    "lng": 13.599475,
+    "kind": "beach",
+    "excluded": true,
+    "excludeReason": "Separate operator – different/extra entrance pricing (not in BBB standard tariff)"
+  }
+]
