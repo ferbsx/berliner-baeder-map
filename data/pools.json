@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T13:01:53.425Z",
+  "generatedAt": "2026-06-17T16:45:39.088Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -11,7 +11,7 @@
     "2026-06-22",
     "2026-06-23"
   ],
-  "poolCount": 45,
+  "poolCount": 44,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -2474,76 +2474,6 @@
       "slug": "strandbad-halensee",
       "name": "Strandbad Halensee",
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-halensee/",
-      "days": [
-        {
-          "date": "2026-06-17",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-06-18",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-06-19",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-06-20",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-06-21",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-06-22",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-06-23",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "strandbad-jungfernheide",
-      "name": "Strandbad Jungfernheide",
-      "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-jungfernheide/",
       "days": [
         {
           "date": "2026-06-17",
