@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:35:20.642Z",
+  "generatedAt": "2026-06-18T14:59:33.314Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -11,7 +11,7 @@
     "2026-06-23",
     "2026-06-24"
   ],
-  "poolCount": 43,
+  "poolCount": 45,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -2106,6 +2106,71 @@
       ]
     },
     {
+      "slug": "stadtbad-neukoelln",
+      "name": "Stadtbad Neukölln",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-neukoelln/",
+      "days": [
+        {
+          "date": "2026-06-18",
+          "periods": [
+            {
+              "open": "14:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-19",
+          "periods": [
+            {
+              "open": "13:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-20",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-21",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-22",
+          "periods": [
+            {
+              "open": "12:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-23",
+          "periods": [
+            {
+              "open": "14:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-24",
+          "periods": []
+        }
+      ]
+    },
+    {
       "slug": "stadtbad-tempelhof",
       "name": "Stadtbad Tempelhof",
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tempelhof/",
@@ -2680,6 +2745,71 @@
               "close": "20:00"
             }
           ]
+        },
+        {
+          "date": "2026-06-22",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-23",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-24",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "strandbad-weissensee",
+      "name": "Strandbad Weißensee",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-weissensee/",
+      "days": [
+        {
+          "date": "2026-06-18",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-19",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-20",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-21",
+          "periods": []
         },
         {
           "date": "2026-06-22",
