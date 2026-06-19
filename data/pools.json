@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T05:32:57.661Z",
+  "generatedAt": "2026-06-19T10:21:16.592Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -11,7 +11,7 @@
     "2026-06-24",
     "2026-06-25"
   ],
-  "poolCount": 44,
+  "poolCount": 45,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -2102,6 +2102,66 @@
               "close": "08:00"
             }
           ]
+        }
+      ]
+    },
+    {
+      "slug": "stadtbad-neukoelln",
+      "name": "Stadtbad Neukölln",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-neukoelln/",
+      "days": [
+        {
+          "date": "2026-06-19",
+          "periods": [
+            {
+              "open": "13:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-20",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-21",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-22",
+          "periods": [
+            {
+              "open": "12:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-23",
+          "periods": [
+            {
+              "open": "14:00",
+              "close": "20:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-24",
+          "periods": []
+        },
+        {
+          "date": "2026-06-25",
+          "periods": []
         }
       ]
     },
