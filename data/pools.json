@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-24T21:09:00.209Z",
+  "generatedAt": "2026-06-24T22:45:53.840Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
-    "2026-06-24",
     "2026-06-25",
     "2026-06-26",
     "2026-06-27",
     "2026-06-28",
     "2026-06-29",
-    "2026-06-30"
+    "2026-06-30",
+    "2026-07-01"
   ],
   "poolCount": 44,
   "pools": [
@@ -18,15 +18,6 @@
       "name": "Kinderbad Marzahn (Platsch)",
       "url": "https://www.berlinerbaeder.de/baeder/detail/kinderbad-marzahn-platsch/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "18:30"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -74,6 +65,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "18:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
@@ -89,15 +89,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/kinderbad-monbijou/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "11:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -150,6 +141,15 @@
               "close": "19:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "11:00",
+              "close": "19:00"
+            }
+          ]
         }
       ]
     },
@@ -158,15 +158,6 @@
       "name": "Kleine Schwimmhalle Wuhlheide",
       "url": "https://www.berlinerbaeder.de/baeder/detail/kleine-schwimmhalle-wuhlheide/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "09:00",
-              "close": "15:30"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -210,6 +201,15 @@
               "close": "15:30"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "15:30"
+            }
+          ]
         }
       ]
     },
@@ -218,15 +218,6 @@
       "name": "Kombibad Gropiusstadt - Sommerbad",
       "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-sommerbad/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -280,6 +271,15 @@
               "close": "20:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
         }
       ]
     },
@@ -288,15 +288,6 @@
       "name": "Kombibad Seestraße - Sommerbad",
       "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-seestrasse-sommerbad/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "20:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -350,6 +341,15 @@
               "close": "20:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "20:00"
+            }
+          ]
         }
       ]
     },
@@ -358,15 +358,6 @@
       "name": "Kombibad Spandau Süd - Hallenbad",
       "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-spandau-sued-hallenbad/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -415,6 +406,15 @@
               "close": "18:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         }
       ]
     },
@@ -423,15 +423,6 @@
       "name": "Schwimm- und Sprunghalle im Europasportpark (SSE)",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimm-und-sprunghalle-im-europasportpark-sse/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "22:30"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -485,6 +476,15 @@
               "close": "22:30"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:30"
+            }
+          ]
         }
       ]
     },
@@ -494,10 +494,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-anton-saefkow-platz/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": []
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -540,6 +536,10 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -549,10 +549,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-baumschulenweg/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": []
-        },
-        {
           "date": "2026-06-25",
           "periods": []
         },
@@ -580,6 +576,10 @@
         {
           "date": "2026-06-30",
           "periods": []
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -588,10 +588,6 @@
       "name": "Schwimmhalle Buch",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-buch/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": []
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -635,6 +631,10 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -643,15 +643,6 @@
       "name": "Schwimmhalle Ernst-Thälmann-Park",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-ernst-thaelmann-park/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -692,6 +683,15 @@
           "periods": [
             {
               "open": "06:30",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "10:00",
               "close": "22:00"
             }
           ]
@@ -704,10 +704,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-finckensteinallee/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": []
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -750,6 +746,10 @@
               "close": "14:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -758,10 +758,6 @@
       "name": "Schwimmhalle Fischerinsel",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-fischerinsel/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": []
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -805,6 +801,10 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -813,15 +813,6 @@
       "name": "Schwimmhalle Helene-Weigel-Platz \"Helmut Behrendt\"",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-helene-weigel-platz-helmut-behrendt/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -855,6 +846,10 @@
         {
           "date": "2026-06-30",
           "periods": []
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -863,15 +858,6 @@
       "name": "Schwimmhalle Kaulsdorf",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-kaulsdorf/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "15:00",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -923,6 +909,15 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "15:00",
+              "close": "22:00"
+            }
+          ]
         }
       ]
     },
@@ -931,10 +926,6 @@
       "name": "Schwimmhalle Sewanstraße",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-sewanstrasse/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": []
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -986,6 +977,10 @@
               "close": "22:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -994,15 +989,6 @@
       "name": "Schwimmhalle Thomas-Mann-Straße",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-thomas-mann-strasse/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "08:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -1041,6 +1027,15 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
         }
       ]
     },
@@ -1049,15 +1044,6 @@
       "name": "Schwimmhalle Zingster Straße",
       "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-zingster-strasse/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "16:00",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -1109,6 +1095,15 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "16:00",
+              "close": "22:00"
+            }
+          ]
         }
       ]
     },
@@ -1117,15 +1112,6 @@
       "name": "Sommerbad am Insulaner",
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-am-insulaner/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -1173,6 +1159,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1188,15 +1183,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-humboldthain/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1243,6 +1229,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1258,15 +1253,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-kreuzberg/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1313,6 +1299,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1328,15 +1323,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-mariendorf/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1383,6 +1369,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1398,15 +1393,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-neukoelln/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1453,6 +1439,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1468,15 +1463,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-olympiastadion/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1523,6 +1509,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1538,15 +1533,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-pankow/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:30",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1593,6 +1579,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:30",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:30",
@@ -1608,15 +1603,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-staaken-west/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1663,6 +1649,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "07:00",
@@ -1678,15 +1673,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-wilmersdorf/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "18:30"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -1739,6 +1725,15 @@
               "close": "18:30"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
         }
       ]
     },
@@ -1747,15 +1742,6 @@
       "name": "Sommerbad Wuhlheide",
       "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-wuhlheide/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -1803,6 +1789,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "08:00",
@@ -1817,15 +1812,6 @@
       "name": "Sport- und Lehrschwimmhalle Schöneberg",
       "url": "https://www.berlinerbaeder.de/baeder/detail/sport-und-lehrschwimmhalle-schoeneberg/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "08:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -1869,6 +1855,15 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
         }
       ]
     },
@@ -1877,15 +1872,6 @@
       "name": "Sportbad Britz",
       "url": "https://www.berlinerbaeder.de/baeder/detail/sportbad-britz/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "10:30"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -1929,6 +1915,15 @@
               "close": "10:30"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "10:30"
+            }
+          ]
         }
       ]
     },
@@ -1937,19 +1932,6 @@
       "name": "Stadtbad Charlottenburg - Alte Halle",
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-charlottenburg-alte-halle/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:00",
-              "close": "15:00"
-            },
-            {
-              "open": "20:00",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -2007,6 +1989,19 @@
               "close": "14:30"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "15:00"
+            },
+            {
+              "open": "20:00",
+              "close": "22:00"
+            }
+          ]
         }
       ]
     },
@@ -2015,15 +2010,6 @@
       "name": "Stadtbad Märkisches Viertel",
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-maerkisches-viertel/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "16:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": []
@@ -2051,6 +2037,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "16:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "06:30",
@@ -2066,15 +2061,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-mitte-james-simon/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "08:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2102,6 +2088,10 @@
         {
           "date": "2026-06-30",
           "periods": []
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -2110,15 +2100,6 @@
       "name": "Stadtbad Tempelhof",
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tempelhof/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "06:30",
-              "close": "08:30"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -2152,6 +2133,10 @@
         {
           "date": "2026-06-30",
           "periods": []
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -2160,15 +2145,6 @@
       "name": "Stadtbad Tiergarten",
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tiergarten/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "22:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -2219,6 +2195,15 @@
           "periods": [
             {
               "open": "06:30",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "10:00",
               "close": "22:00"
             }
           ]
@@ -2231,10 +2216,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-wilmersdorf-ii/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": []
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2277,6 +2258,10 @@
               "close": "08:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": []
         }
       ]
     },
@@ -2286,15 +2271,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-friedrichshagen/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2341,6 +2317,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
@@ -2356,15 +2341,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-gruenau/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2411,6 +2387,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
@@ -2426,15 +2411,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-halensee/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2481,6 +2457,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
@@ -2496,15 +2481,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-orankesee/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "19:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2551,6 +2527,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
@@ -2566,15 +2551,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-ploetzensee/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2621,6 +2597,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
@@ -2636,15 +2621,6 @@
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-wannsee/",
       "days": [
         {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
           "date": "2026-06-25",
           "periods": [
             {
@@ -2697,6 +2673,15 @@
               "close": "20:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "20:00"
+            }
+          ]
         }
       ]
     },
@@ -2705,15 +2690,6 @@
       "name": "Strandbad Weißensee",
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-weissensee/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -2762,6 +2738,15 @@
               "close": "20:00"
             }
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
         }
       ]
     },
@@ -2770,15 +2755,6 @@
       "name": "Strandbad Wendenschloss",
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-wendenschloss/",
       "days": [
-        {
-          "date": "2026-06-24",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
         {
           "date": "2026-06-25",
           "periods": [
@@ -2826,6 +2802,15 @@
         },
         {
           "date": "2026-06-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
           "periods": [
             {
               "open": "10:00",
