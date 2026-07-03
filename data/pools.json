@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T11:29:29.149Z",
+  "generatedAt": "2026-07-03T13:21:12.479Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-07-15",
     "2026-07-16"
   ],
-  "poolCount": 38,
+  "poolCount": 39,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -756,6 +756,79 @@
               "close": "22:30"
             }
           ]
+        },
+        {
+          "date": "2026-07-09",
+          "periods": []
+        },
+        {
+          "date": "2026-07-10",
+          "periods": []
+        },
+        {
+          "date": "2026-07-11",
+          "periods": []
+        },
+        {
+          "date": "2026-07-12",
+          "periods": []
+        },
+        {
+          "date": "2026-07-13",
+          "periods": []
+        },
+        {
+          "date": "2026-07-14",
+          "periods": []
+        },
+        {
+          "date": "2026-07-15",
+          "periods": []
+        },
+        {
+          "date": "2026-07-16",
+          "periods": []
+        }
+      ]
+    },
+    {
+      "slug": "schwimmhalle-allendeviertel",
+      "name": "Schwimmhalle Allendeviertel",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-allendeviertel/",
+      "days": [
+        {
+          "date": "2026-07-03",
+          "periods": []
+        },
+        {
+          "date": "2026-07-04",
+          "periods": []
+        },
+        {
+          "date": "2026-07-05",
+          "periods": []
+        },
+        {
+          "date": "2026-07-06",
+          "periods": [
+            {
+              "open": "13:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-07",
+          "periods": [
+            {
+              "open": "13:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "periods": []
         },
         {
           "date": "2026-07-09",
@@ -2764,7 +2837,7 @@
           "periods": [
             {
               "open": "08:00",
-              "close": "20:00"
+              "close": "14:30"
             }
           ]
         },
@@ -2773,7 +2846,7 @@
           "periods": [
             {
               "open": "08:00",
-              "close": "20:00"
+              "close": "14:30"
             }
           ]
         },
