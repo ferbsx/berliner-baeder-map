@@ -35,7 +35,7 @@ export async function loadPools() {
 
   return {
     generatedAt: hours.generatedAt,
-    dates: hours.dates, // 7-day rolling window [today … +6]
+    dates: hours.dates, // rolling window starting today (length varies: 7 or 14 days)
     pools,
   };
 }

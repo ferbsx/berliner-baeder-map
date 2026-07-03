@@ -47,9 +47,11 @@ function walkFallback(origin, dest) {
 
 // Plan one journey origin → dest. departureISO optional (defaults to "now").
 // → { durationMin, ridden, walkOnly, depart?, arrive?, estimated?, distanceKm? } | null
-// Never throws for ordinary "no route" cases: a too-close hop becomes a walk,
-// and any fetch failure degrades to a walk estimate when the points are close.
-export async function planJourney(origin, dest, departureISO, signal) {
+// Never throws and never hangs: a request that errors or exceeds the timeout
+// (e.g. the VBB API is slow/down) degrades to a walk estimate when the points
+// are close, or null ("keine Route") otherwise — rather than spinning forever.
+const JOURNEY_TIMEOUT_MS = 12000;
+export async function planJourney(origin, dest, departureISO) {
   const u = new URL(VBB_BASE + '/journeys');
   u.searchParams.set('from.latitude', origin.lat);
   u.searchParams.set('from.longitude', origin.lng);
@@ -63,12 +65,15 @@ export async function planJourney(origin, dest, departureISO, signal) {
   if (departureISO) u.searchParams.set('departure', departureISO);
 
   let data = null;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), JOURNEY_TIMEOUT_MS);
   try {
-    const res = await fetch(u, { signal });
+    const res = await fetch(u, { signal: ctrl.signal });
     if (res.ok) data = await res.json();
-  } catch (err) {
-    if (err && err.name === 'AbortError') throw err;
-    data = null;
+  } catch {
+    data = null; // network error or timeout → fall through to walk fallback / null
+  } finally {
+    clearTimeout(timer);
   }
 
   const j = data && data.journeys && data.journeys[0];

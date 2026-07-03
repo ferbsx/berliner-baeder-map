@@ -1,11 +1,13 @@
 // Scrapes berlinerbaeder.de "Öffnungszeiten auf einen Blick" into ../data/pools.json
 //
 // The page renders three identical-by-week tables (Alle Bäder / Sommerbäder /
-// Hallenbäder) server-side. Each table has a header row whose 7 day-columns are a
-// rolling window starting "heute" (today) with the remaining 6 dates printed
-// explicitly (e.g. "Di. 09.06.26"). Each pool row has a sticky name/link cell
-// followed by 7 day cells; an open day holds one or more `.period` spans
-// (split hours = multiple periods), a closed day holds `.timetable-closed`.
+// Hallenbäder) server-side. Each table has a header row whose day-columns are a
+// rolling window starting "heute" (today) with the remaining dates printed
+// explicitly (e.g. "Di. 09.06.26"). The window length is not fixed — the site
+// has used 7-day and 14-day windows — so we read the count from the header.
+// Each pool row has a sticky name/link cell followed by one cell per day; an open
+// day holds one or more `.period` spans (split hours = multiple periods), a
+// closed day holds `.timetable-closed`.
 //
 // We dedupe pools by slug (the Alle-Bäder table is the superset) and emit
 // per-day periods for the whole window so the frontend can answer both
@@ -49,18 +51,19 @@ async function main() {
   const html = await res.text();
   const $ = cheerio.load(html);
 
-  // --- 1. Resolve the 7 dates from the first header row ---
+  // --- 1. Resolve the day columns from the first header row ---
+  // Layout: [ "Bad" | "heute" (no printed date) | "Fr. 03.07.26" | … ].
+  // The window size is NOT fixed — the site has used both 7-day and 14-day
+  // windows — so derive it from the header rather than assuming a count.
   const headerRow = $('.table-row.header-row').first();
   if (!headerRow.length) throw new Error('Header row not found — page structure changed.');
   const headerCells = headerRow.children('.table-cell').toArray();
-  // headerCells[0] = "Bad", [1] = "heute" (no date), [2..7] = explicit dates
-  const explicit = headerCells.slice(2).map((c) => parseGermanDate($(c).text()));
-  const firstExplicit = explicit.find(Boolean);
-  if (!firstExplicit) throw new Error('Could not parse any header date.');
-  const dates = [isoMinusOneDay(firstExplicit), ...explicit];
-  // Guard: exactly 7 day columns expected
-  if (dates.length !== 7 || dates.some((d) => !d)) {
-    throw new Error(`Unexpected date columns: ${JSON.stringify(dates)}`);
+  // Drop the leading "Bad" name column; everything after it is a day column.
+  const dates = headerCells.slice(1).map((c) => parseGermanDate($(c).text()));
+  // The first day column is "heute" with no printed date — derive it from day 2.
+  if (!dates[0] && dates[1]) dates[0] = isoMinusOneDay(dates[1]);
+  if (dates.length < 2 || dates.some((d) => !d)) {
+    throw new Error(`Unexpected date columns (${dates.length}): ${JSON.stringify(dates)}`);
   }
 
   // --- 2. Parse every pool row, dedupe by slug ---
@@ -119,7 +122,7 @@ async function main() {
   const openToday = pools.filter((p) => p.days[0].periods.length).length;
   console.log(
     `Wrote ${pools.length} pools to ${OUT}\n` +
-      `Window: ${dates[0]} … ${dates[6]} | open today: ${openToday}`
+      `Window: ${dates[0]} … ${dates[dates.length - 1]} (${dates.length} days) | open today: ${openToday}`
   );
 }
 
