@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T12:50:35.568Z",
+  "generatedAt": "2026-07-15T14:45:49.864Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-07-27",
     "2026-07-28"
   ],
-  "poolCount": 26,
+  "poolCount": 27,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -283,6 +283,94 @@
               "close": "19:00"
             }
           ]
+        }
+      ]
+    },
+    {
+      "slug": "kombibad-gropiusstadt-hallenbad",
+      "name": "Kombibad Gropiusstadt - Hallenbad",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-hallenbad/",
+      "days": [
+        {
+          "date": "2026-07-15",
+          "periods": []
+        },
+        {
+          "date": "2026-07-16",
+          "periods": []
+        },
+        {
+          "date": "2026-07-17",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-18",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-19",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-20",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-21",
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-22",
+          "periods": []
+        },
+        {
+          "date": "2026-07-23",
+          "periods": []
+        },
+        {
+          "date": "2026-07-24",
+          "periods": []
+        },
+        {
+          "date": "2026-07-25",
+          "periods": []
+        },
+        {
+          "date": "2026-07-26",
+          "periods": []
+        },
+        {
+          "date": "2026-07-27",
+          "periods": []
+        },
+        {
+          "date": "2026-07-28",
+          "periods": []
         }
       ]
     },
