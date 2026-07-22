@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T00:56:05.272Z",
+  "generatedAt": "2026-07-22T04:15:30.147Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-08-03",
     "2026-08-04"
   ],
-  "poolCount": 26,
+  "poolCount": 25,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -283,84 +283,6 @@
               "close": "19:00"
             }
           ]
-        }
-      ]
-    },
-    {
-      "slug": "kombibad-gropiusstadt-hallenbad",
-      "name": "Kombibad Gropiusstadt - Hallenbad",
-      "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-hallenbad/",
-      "days": [
-        {
-          "date": "2026-07-22",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-23",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-24",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-25",
-          "periods": []
-        },
-        {
-          "date": "2026-07-26",
-          "periods": []
-        },
-        {
-          "date": "2026-07-27",
-          "periods": []
-        },
-        {
-          "date": "2026-07-28",
-          "periods": []
-        },
-        {
-          "date": "2026-07-29",
-          "periods": []
-        },
-        {
-          "date": "2026-07-30",
-          "periods": []
-        },
-        {
-          "date": "2026-07-31",
-          "periods": []
-        },
-        {
-          "date": "2026-08-01",
-          "periods": []
-        },
-        {
-          "date": "2026-08-02",
-          "periods": []
-        },
-        {
-          "date": "2026-08-03",
-          "periods": []
-        },
-        {
-          "date": "2026-08-04",
-          "periods": []
         }
       ]
     },
