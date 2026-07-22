@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T13:42:43.261Z",
+  "generatedAt": "2026-07-22T15:37:07.753Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-08-03",
     "2026-08-04"
   ],
-  "poolCount": 25,
+  "poolCount": 26,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -662,6 +662,99 @@
               "close": "14:30"
             }
           ]
+        }
+      ]
+    },
+    {
+      "slug": "schwimmhalle-finckensteinallee",
+      "name": "Schwimmhalle Finckensteinallee",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-finckensteinallee/",
+      "days": [
+        {
+          "date": "2026-07-22",
+          "periods": []
+        },
+        {
+          "date": "2026-07-23",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "14:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-24",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "14:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-25",
+          "periods": [
+            {
+              "open": "07:30",
+              "close": "14:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-26",
+          "periods": [
+            {
+              "open": "07:30",
+              "close": "14:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-27",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "14:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-28",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "14:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-29",
+          "periods": []
+        },
+        {
+          "date": "2026-07-30",
+          "periods": []
+        },
+        {
+          "date": "2026-07-31",
+          "periods": []
+        },
+        {
+          "date": "2026-08-01",
+          "periods": []
+        },
+        {
+          "date": "2026-08-02",
+          "periods": []
+        },
+        {
+          "date": "2026-08-03",
+          "periods": []
+        },
+        {
+          "date": "2026-08-04",
+          "periods": []
         }
       ]
     },
