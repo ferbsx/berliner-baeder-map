@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T08:46:13.991Z",
+  "generatedAt": "2026-08-03T12:18:22.015Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-08-15",
     "2026-08-16"
   ],
-  "poolCount": 25,
+  "poolCount": 26,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -2466,6 +2466,139 @@
       "slug": "strandbad-halensee",
       "name": "Strandbad Halensee",
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-halensee/",
+      "days": [
+        {
+          "date": "2026-08-03",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-04",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-08",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-09",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-10",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-11",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-13",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-14",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "strandbad-jungfernheide",
+      "name": "Strandbad Jungfernheide",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-jungfernheide/",
       "days": [
         {
           "date": "2026-08-03",
