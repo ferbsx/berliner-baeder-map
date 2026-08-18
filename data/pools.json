@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T15:02:39.691Z",
+  "generatedAt": "2026-08-18T15:56:01.115Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-08-30",
     "2026-08-31"
   ],
-  "poolCount": 32,
+  "poolCount": 33,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -627,6 +627,74 @@
         {
           "date": "2026-08-31",
           "periods": []
+        }
+      ]
+    },
+    {
+      "slug": "schwimmhalle-baumschulenweg",
+      "name": "Schwimmhalle Baumschulenweg",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-baumschulenweg/",
+      "days": [
+        {
+          "date": "2026-08-18",
+          "periods": []
+        },
+        {
+          "date": "2026-08-19",
+          "periods": []
+        },
+        {
+          "date": "2026-08-20",
+          "periods": []
+        },
+        {
+          "date": "2026-08-21",
+          "periods": []
+        },
+        {
+          "date": "2026-08-22",
+          "periods": []
+        },
+        {
+          "date": "2026-08-23",
+          "periods": []
+        },
+        {
+          "date": "2026-08-24",
+          "periods": []
+        },
+        {
+          "date": "2026-08-25",
+          "periods": []
+        },
+        {
+          "date": "2026-08-26",
+          "periods": []
+        },
+        {
+          "date": "2026-08-27",
+          "periods": []
+        },
+        {
+          "date": "2026-08-28",
+          "periods": []
+        },
+        {
+          "date": "2026-08-29",
+          "periods": []
+        },
+        {
+          "date": "2026-08-30",
+          "periods": []
+        },
+        {
+          "date": "2026-08-31",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
         }
       ]
     },
