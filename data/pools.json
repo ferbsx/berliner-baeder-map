@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T11:20:43.854Z",
+  "generatedAt": "2026-08-19T11:49:20.167Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-08-31",
     "2026-09-01"
   ],
-  "poolCount": 37,
+  "poolCount": 38,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -273,6 +273,79 @@
         {
           "date": "2026-09-01",
           "periods": []
+        }
+      ]
+    },
+    {
+      "slug": "kleine-schwimmhalle-wuhlheide",
+      "name": "Kleine Schwimmhalle Wuhlheide",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/kleine-schwimmhalle-wuhlheide/",
+      "days": [
+        {
+          "date": "2026-08-19",
+          "periods": []
+        },
+        {
+          "date": "2026-08-20",
+          "periods": []
+        },
+        {
+          "date": "2026-08-21",
+          "periods": []
+        },
+        {
+          "date": "2026-08-22",
+          "periods": []
+        },
+        {
+          "date": "2026-08-23",
+          "periods": []
+        },
+        {
+          "date": "2026-08-24",
+          "periods": []
+        },
+        {
+          "date": "2026-08-25",
+          "periods": []
+        },
+        {
+          "date": "2026-08-26",
+          "periods": []
+        },
+        {
+          "date": "2026-08-27",
+          "periods": []
+        },
+        {
+          "date": "2026-08-28",
+          "periods": []
+        },
+        {
+          "date": "2026-08-29",
+          "periods": []
+        },
+        {
+          "date": "2026-08-30",
+          "periods": []
+        },
+        {
+          "date": "2026-08-31",
+          "periods": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "15:30"
+            }
+          ]
         }
       ]
     },
