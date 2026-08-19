@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T08:32:02.802Z",
+  "generatedAt": "2026-08-19T09:28:57.882Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-08-31",
     "2026-09-01"
   ],
-  "poolCount": 36,
+  "poolCount": 37,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -757,6 +757,84 @@
               "close": "08:00"
             }
           ]
+        }
+      ]
+    },
+    {
+      "slug": "schwimmhalle-anton-saefkow-platz",
+      "name": "Schwimmhalle Anton-Saefkow-Platz",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-anton-saefkow-platz/",
+      "days": [
+        {
+          "date": "2026-08-19",
+          "periods": []
+        },
+        {
+          "date": "2026-08-20",
+          "periods": []
+        },
+        {
+          "date": "2026-08-21",
+          "periods": []
+        },
+        {
+          "date": "2026-08-22",
+          "periods": []
+        },
+        {
+          "date": "2026-08-23",
+          "periods": []
+        },
+        {
+          "date": "2026-08-24",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-25",
+          "periods": []
+        },
+        {
+          "date": "2026-08-26",
+          "periods": []
+        },
+        {
+          "date": "2026-08-27",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-28",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-29",
+          "periods": []
+        },
+        {
+          "date": "2026-08-30",
+          "periods": []
+        },
+        {
+          "date": "2026-08-31",
+          "periods": []
+        },
+        {
+          "date": "2026-09-01",
+          "periods": []
         }
       ]
     },
