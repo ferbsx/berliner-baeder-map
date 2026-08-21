@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T06:55:11.584Z",
+  "generatedAt": "2026-08-21T07:39:08.635Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-02",
     "2026-09-03"
   ],
-  "poolCount": 41,
+  "poolCount": 42,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -350,6 +350,101 @@
       ]
     },
     {
+      "slug": "kombibad-gropiusstadt-hallenbad",
+      "name": "Kombibad Gropiusstadt - Hallenbad",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-hallenbad/",
+      "days": [
+        {
+          "date": "2026-08-21",
+          "periods": []
+        },
+        {
+          "date": "2026-08-22",
+          "periods": []
+        },
+        {
+          "date": "2026-08-23",
+          "periods": []
+        },
+        {
+          "date": "2026-08-24",
+          "periods": []
+        },
+        {
+          "date": "2026-08-25",
+          "periods": []
+        },
+        {
+          "date": "2026-08-26",
+          "periods": []
+        },
+        {
+          "date": "2026-08-27",
+          "periods": []
+        },
+        {
+          "date": "2026-08-28",
+          "periods": []
+        },
+        {
+          "date": "2026-08-29",
+          "periods": []
+        },
+        {
+          "date": "2026-08-30",
+          "periods": []
+        },
+        {
+          "date": "2026-08-31",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:15"
+            },
+            {
+              "open": "14:00",
+              "close": "16:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:15"
+            },
+            {
+              "open": "13:00",
+              "close": "16:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-02",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:15"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-03",
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:15"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "kombibad-gropiusstadt-sommerbad",
       "name": "Kombibad Gropiusstadt - Sommerbad",
       "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-sommerbad/",
@@ -446,19 +541,39 @@
         },
         {
           "date": "2026-08-31",
-          "periods": []
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
         },
         {
           "date": "2026-09-01",
-          "periods": []
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
         },
         {
           "date": "2026-09-02",
-          "periods": []
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
         },
         {
           "date": "2026-09-03",
-          "periods": []
+          "periods": [
+            {
+              "open": "07:00",
+              "close": "20:00"
+            }
+          ]
         }
       ]
     },
