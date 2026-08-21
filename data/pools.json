@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:58:38.522Z",
+  "generatedAt": "2026-08-21T06:55:11.584Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-02",
     "2026-09-03"
   ],
-  "poolCount": 42,
+  "poolCount": 41,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -3119,114 +3119,6 @@
             {
               "open": "06:30",
               "close": "08:00"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "stadtbad-schoeneberg-hans-rosenthal",
-      "name": "Stadtbad Schöneberg \"Hans Rosenthal\"",
-      "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-schoeneberg-hans-rosenthal/",
-      "days": [
-        {
-          "date": "2026-08-21",
-          "periods": []
-        },
-        {
-          "date": "2026-08-22",
-          "periods": []
-        },
-        {
-          "date": "2026-08-23",
-          "periods": []
-        },
-        {
-          "date": "2026-08-24",
-          "periods": []
-        },
-        {
-          "date": "2026-08-25",
-          "periods": []
-        },
-        {
-          "date": "2026-08-26",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-08-27",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-08-28",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-08-29",
-          "periods": [
-            {
-              "open": "09:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-08-30",
-          "periods": [
-            {
-              "open": "09:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-08-31",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-01",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-02",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-03",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "22:00"
             }
           ]
         }
