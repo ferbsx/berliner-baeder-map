@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T11:24:23.660Z",
+  "generatedAt": "2026-08-21T11:51:14.270Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-02",
     "2026-09-03"
   ],
-  "poolCount": 41,
+  "poolCount": 43,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -3912,6 +3912,124 @@
       ]
     },
     {
+      "slug": "strandbad-luebars",
+      "name": "Strandbad Lübars",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-luebars/",
+      "days": [
+        {
+          "date": "2026-08-21",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-22",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-23",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-24",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-25",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-26",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-28",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-29",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-30",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-31",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "periods": []
+        },
+        {
+          "date": "2026-09-02",
+          "periods": []
+        },
+        {
+          "date": "2026-09-03",
+          "periods": []
+        }
+      ]
+    },
+    {
       "slug": "strandbad-orankesee",
       "name": "Strandbad Orankesee",
       "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-orankesee/",
@@ -4114,6 +4232,139 @@
         {
           "date": "2026-09-03",
           "periods": []
+        }
+      ]
+    },
+    {
+      "slug": "strandbad-tegeler-see",
+      "name": "Strandbad Tegeler See",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-tegeler-see/",
+      "days": [
+        {
+          "date": "2026-08-21",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-22",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-23",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-24",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-25",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-26",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-28",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-29",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-30",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-31",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-02",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-03",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ]
         }
       ]
     },
