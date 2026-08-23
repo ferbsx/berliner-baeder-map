@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T05:24:39.070Z",
+  "generatedAt": "2026-08-23T05:53:53.659Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -3504,36 +3504,78 @@
         },
         {
           "date": "2026-08-30",
-          "periods": []
+          "periods": [
+            {
+              "open": "17:00",
+              "close": "19:00"
+            }
+          ]
         },
         {
           "date": "2026-08-31",
           "periods": [
             {
               "open": "12:00",
-              "close": "14:30"
+              "close": "22:00"
             }
           ]
         },
         {
           "date": "2026-09-01",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            },
+            {
+              "open": "14:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-09-02",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-09-03",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            },
+            {
+              "open": "14:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-09-04",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            },
+            {
+              "open": "14:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-09-05",
-          "periods": []
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
         }
       ]
     },
