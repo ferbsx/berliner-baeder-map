@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T10:33:12.606Z",
+  "generatedAt": "2026-08-24T11:22:59.740Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -288,8 +288,8 @@
           "date": "2026-08-31",
           "periods": [
             {
-              "open": "12:00",
-              "close": "15:30"
+              "open": "09:00",
+              "close": "16:30"
             }
           ]
         },
@@ -298,7 +298,7 @@
           "periods": [
             {
               "open": "09:00",
-              "close": "15:30"
+              "close": "16:30"
             }
           ]
         },
@@ -307,7 +307,7 @@
           "periods": [
             {
               "open": "09:00",
-              "close": "15:30"
+              "close": "16:30"
             }
           ]
         },
@@ -3598,8 +3598,8 @@
           "date": "2026-09-06",
           "periods": [
             {
-              "open": "09:00",
-              "close": "17:00"
+              "open": "08:00",
+              "close": "22:00"
             }
           ]
         }
