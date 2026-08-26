@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T10:04:53.205Z",
+  "generatedAt": "2026-08-26T11:00:13.923Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-07",
     "2026-09-08"
   ],
-  "poolCount": 49,
+  "poolCount": 50,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -4245,6 +4245,99 @@
             {
               "open": "14:30",
               "close": "22:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "stadtbad-wilmersdorf-ii",
+      "name": "Stadtbad Wilmersdorf II",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-wilmersdorf-ii/",
+      "days": [
+        {
+          "date": "2026-08-26",
+          "periods": []
+        },
+        {
+          "date": "2026-08-27",
+          "periods": []
+        },
+        {
+          "date": "2026-08-28",
+          "periods": []
+        },
+        {
+          "date": "2026-08-29",
+          "periods": []
+        },
+        {
+          "date": "2026-08-30",
+          "periods": []
+        },
+        {
+          "date": "2026-08-31",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-02",
+          "periods": []
+        },
+        {
+          "date": "2026-09-03",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-04",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-05",
+          "periods": []
+        },
+        {
+          "date": "2026-09-06",
+          "periods": []
+        },
+        {
+          "date": "2026-09-07",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "08:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-08",
+          "periods": [
+            {
+              "open": "06:00",
+              "close": "08:00"
             }
           ]
         }
