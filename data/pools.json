@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T00:44:02.995Z",
+  "generatedAt": "2026-08-31T06:36:35.978Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-12",
     "2026-09-13"
   ],
-  "poolCount": 43,
+  "poolCount": 42,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -2349,12 +2349,7 @@
       "days": [
         {
           "date": "2026-08-31",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
+          "periods": []
         },
         {
           "date": "2026-09-01",
@@ -2605,74 +2600,6 @@
               "close": "19:00"
             }
           ]
-        }
-      ]
-    },
-    {
-      "slug": "sommerbad-olympiastadion",
-      "name": "Sommerbad Olympiastadion",
-      "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-olympiastadion/",
-      "days": [
-        {
-          "date": "2026-08-31",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-01",
-          "periods": []
-        },
-        {
-          "date": "2026-09-02",
-          "periods": []
-        },
-        {
-          "date": "2026-09-03",
-          "periods": []
-        },
-        {
-          "date": "2026-09-04",
-          "periods": []
-        },
-        {
-          "date": "2026-09-05",
-          "periods": []
-        },
-        {
-          "date": "2026-09-06",
-          "periods": []
-        },
-        {
-          "date": "2026-09-07",
-          "periods": []
-        },
-        {
-          "date": "2026-09-08",
-          "periods": []
-        },
-        {
-          "date": "2026-09-09",
-          "periods": []
-        },
-        {
-          "date": "2026-09-10",
-          "periods": []
-        },
-        {
-          "date": "2026-09-11",
-          "periods": []
-        },
-        {
-          "date": "2026-09-12",
-          "periods": []
-        },
-        {
-          "date": "2026-09-13",
-          "periods": []
         }
       ]
     },
