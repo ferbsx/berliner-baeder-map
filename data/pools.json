@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T09:49:50.910Z",
+  "generatedAt": "2026-09-04T13:57:49.988Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-16",
     "2026-09-17"
   ],
-  "poolCount": 38,
+  "poolCount": 39,
   "pools": [
     {
       "slug": "kinderbad-marzahn-platsch",
@@ -2507,7 +2507,7 @@
           "periods": [
             {
               "open": "07:00",
-              "close": "19:00"
+              "close": "16:00"
             }
           ]
         }
@@ -3387,6 +3387,114 @@
       ]
     },
     {
+      "slug": "stadtbad-schoeneberg-hans-rosenthal",
+      "name": "Stadtbad Schöneberg \"Hans Rosenthal\"",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-schoeneberg-hans-rosenthal/",
+      "days": [
+        {
+          "date": "2026-09-04",
+          "periods": []
+        },
+        {
+          "date": "2026-09-05",
+          "periods": []
+        },
+        {
+          "date": "2026-09-06",
+          "periods": []
+        },
+        {
+          "date": "2026-09-07",
+          "periods": []
+        },
+        {
+          "date": "2026-09-08",
+          "periods": []
+        },
+        {
+          "date": "2026-09-09",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-10",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-11",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-12",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-13",
+          "periods": [
+            {
+              "open": "09:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-14",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-15",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-16",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-17",
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "16:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "stadtbad-spandau-nord",
       "name": "Stadtbad Spandau Nord",
       "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-spandau-nord/",
@@ -3663,10 +3771,6 @@
             {
               "open": "06:30",
               "close": "08:15"
-            },
-            {
-              "open": "14:30",
-              "close": "16:00"
             }
           ]
         }
