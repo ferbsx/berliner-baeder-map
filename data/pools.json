@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T02:53:20.050Z",
+  "generatedAt": "2026-09-10T07:49:36.487Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-22",
     "2026-09-23"
   ],
-  "poolCount": 38,
+  "poolCount": 39,
   "pools": [
     {
       "slug": "kleine-schwimmhalle-wuhlheide",
@@ -462,7 +462,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "16:00"
+              "close": "15:30"
             }
           ]
         },
@@ -480,7 +480,7 @@
           "periods": [
             {
               "open": "10:00",
-              "close": "18:00"
+              "close": "15:00"
             }
           ]
         },
@@ -2693,7 +2693,7 @@
           "date": "2026-09-17",
           "periods": [
             {
-              "open": "06:00",
+              "open": "06:30",
               "close": "08:00"
             }
           ]
@@ -3268,6 +3268,114 @@
             {
               "open": "16:00",
               "close": "22:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "stadtbad-neukoelln",
+      "name": "Stadtbad Neukölln",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-neukoelln/",
+      "days": [
+        {
+          "date": "2026-09-10",
+          "periods": []
+        },
+        {
+          "date": "2026-09-11",
+          "periods": []
+        },
+        {
+          "date": "2026-09-12",
+          "periods": []
+        },
+        {
+          "date": "2026-09-13",
+          "periods": []
+        },
+        {
+          "date": "2026-09-14",
+          "periods": []
+        },
+        {
+          "date": "2026-09-15",
+          "periods": [
+            {
+              "open": "14:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-16",
+          "periods": [
+            {
+              "open": "11:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-17",
+          "periods": [
+            {
+              "open": "14:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-18",
+          "periods": [
+            {
+              "open": "13:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-19",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-20",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-21",
+          "periods": [
+            {
+              "open": "12:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-22",
+          "periods": [
+            {
+              "open": "14:00",
+              "close": "22:30"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-23",
+          "periods": [
+            {
+              "open": "11:00",
+              "close": "22:30"
             }
           ]
         }
