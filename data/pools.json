@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T00:08:08.547Z",
+  "generatedAt": "2026-09-13T05:08:02.507Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-09-25",
     "2026-09-26"
   ],
-  "poolCount": 36,
+  "poolCount": 35,
   "pools": [
     {
       "slug": "kleine-schwimmhalle-wuhlheide",
@@ -302,74 +302,6 @@
               "close": "16:00"
             }
           ]
-        }
-      ]
-    },
-    {
-      "slug": "kombibad-gropiusstadt-sommerbad",
-      "name": "Kombibad Gropiusstadt - Sommerbad",
-      "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-sommerbad/",
-      "days": [
-        {
-          "date": "2026-09-13",
-          "periods": [
-            {
-              "open": "07:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-14",
-          "periods": []
-        },
-        {
-          "date": "2026-09-15",
-          "periods": []
-        },
-        {
-          "date": "2026-09-16",
-          "periods": []
-        },
-        {
-          "date": "2026-09-17",
-          "periods": []
-        },
-        {
-          "date": "2026-09-18",
-          "periods": []
-        },
-        {
-          "date": "2026-09-19",
-          "periods": []
-        },
-        {
-          "date": "2026-09-20",
-          "periods": []
-        },
-        {
-          "date": "2026-09-21",
-          "periods": []
-        },
-        {
-          "date": "2026-09-22",
-          "periods": []
-        },
-        {
-          "date": "2026-09-23",
-          "periods": []
-        },
-        {
-          "date": "2026-09-24",
-          "periods": []
-        },
-        {
-          "date": "2026-09-25",
-          "periods": []
-        },
-        {
-          "date": "2026-09-26",
-          "periods": []
         }
       ]
     },
@@ -4154,12 +4086,7 @@
       "days": [
         {
           "date": "2026-09-13",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "18:00"
-            }
-          ]
+          "periods": []
         },
         {
           "date": "2026-09-14",
