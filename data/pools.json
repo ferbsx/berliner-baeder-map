@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T03:25:56.254Z",
+  "generatedAt": "2026-09-15T08:52:01.269Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -1889,19 +1889,43 @@
         },
         {
           "date": "2026-09-19",
-          "periods": []
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
         },
         {
           "date": "2026-09-20",
-          "periods": []
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
         },
         {
           "date": "2026-09-21",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
         },
         {
           "date": "2026-09-22",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            },
+            {
+              "open": "15:00",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-09-23",
@@ -1909,7 +1933,16 @@
         },
         {
           "date": "2026-09-24",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            },
+            {
+              "open": "18:00",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-09-25",
@@ -1917,15 +1950,30 @@
         },
         {
           "date": "2026-09-26",
-          "periods": []
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
         },
         {
           "date": "2026-09-27",
-          "periods": []
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
         },
         {
           "date": "2026-09-28",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "08:00"
+            }
+          ]
         }
       ]
     },
