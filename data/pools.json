@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T08:42:46.567Z",
+  "generatedAt": "2026-09-22T13:52:22.827Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-10-04",
     "2026-10-05"
   ],
-  "poolCount": 31,
+  "poolCount": 30,
   "pools": [
     {
       "slug": "kleine-schwimmhalle-wuhlheide",
@@ -4017,114 +4017,6 @@
               "close": "18:00"
             }
           ]
-        },
-        {
-          "date": "2026-10-05",
-          "periods": []
-        }
-      ]
-    },
-    {
-      "slug": "strandbad-wendenschloss",
-      "name": "Strandbad Wendenschloss",
-      "url": "https://www.berlinerbaeder.de/baeder/detail/strandbad-wendenschloss/",
-      "days": [
-        {
-          "date": "2026-09-22",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-23",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-24",
-          "periods": [
-            {
-              "open": "08:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-25",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-26",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "22:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-27",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-28",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-29",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-09-30",
-          "periods": [
-            {
-              "open": "10:00",
-              "close": "20:00"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-01",
-          "periods": []
-        },
-        {
-          "date": "2026-10-02",
-          "periods": []
-        },
-        {
-          "date": "2026-10-03",
-          "periods": []
-        },
-        {
-          "date": "2026-10-04",
-          "periods": []
         },
         {
           "date": "2026-10-05",
