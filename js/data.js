@@ -18,8 +18,10 @@ export async function loadPools() {
 
   const pools = [];
   for (const p of hours.pools) {
-    const m = metaBySlug.get(p.slug);
-    if (!m) continue; // unknown pool / no coordinates
+    // Pools missing from pools-meta.json fall back to the scraper's geocoded
+    // stand-in, so a newly listed pool still shows up.
+    const m = metaBySlug.get(p.slug) || p.autoMeta;
+    if (!m) continue; // no coordinates at all
     if (m.excluded) continue; // separate pricing → never shown
     if (m.lat == null || m.lng == null) continue;
     pools.push({

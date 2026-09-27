@@ -24,12 +24,28 @@
     "kind": "indoor"
   },
   {
+    "slug": "kombibad-gropiusstadt-hallenbad",
+    "name": "Kombibad Gropiusstadt - Hallenbad",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-hallenbad/",
+    "lat": 52.427841,
+    "lng": 13.469708,
+    "kind": "indoor"
+  },
+  {
     "slug": "kombibad-gropiusstadt-sommerbad",
     "name": "Kombibad Gropiusstadt - Sommerbad",
     "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-gropiusstadt-sommerbad/",
     "lat": 52.427509,
     "lng": 13.470635,
     "kind": "summer"
+  },
+  {
+    "slug": "kombibad-seestrasse-hallenbad",
+    "name": "Kombibad Seestraße - Hallenbad",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/kombibad-seestrasse-hallenbad/",
+    "lat": 52.557188,
+    "lng": 13.362987,
+    "kind": "indoor"
   },
   {
     "slug": "kombibad-seestrasse-sommerbad",
@@ -120,11 +136,27 @@
     "kind": "indoor"
   },
   {
+    "slug": "schwimmhalle-huettenweg",
+    "name": "Schwimmhalle Hüttenweg",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-huettenweg/",
+    "lat": 52.453693,
+    "lng": 13.267803,
+    "kind": "indoor"
+  },
+  {
     "slug": "schwimmhalle-kaulsdorf",
     "name": "Schwimmhalle Kaulsdorf",
     "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-kaulsdorf/",
     "lat": 52.520992,
     "lng": 13.585512,
+    "kind": "indoor"
+  },
+  {
+    "slug": "schwimmhalle-kreuzberg",
+    "name": "Schwimmhalle Kreuzberg",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-kreuzberg/",
+    "lat": 52.497815,
+    "lng": 13.402133,
     "kind": "indoor"
   },
   {
@@ -173,6 +205,14 @@
     "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-mariendorf/",
     "lat": 52.4432,
     "lng": 13.398499,
+    "kind": "summer"
+  },
+  {
+    "slug": "sommerbad-neukoelln",
+    "name": "Sommerbad Neukölln",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/sommerbad-neukoelln/",
+    "lat": 52.479588,
+    "lng": 13.415077,
     "kind": "summer"
   },
   {
@@ -250,6 +290,14 @@
     "kind": "indoor"
   },
   {
+    "slug": "stadtbad-lankwitz",
+    "name": "Stadtbad Lankwitz",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-lankwitz/",
+    "lat": 52.441906,
+    "lng": 13.34347,
+    "kind": "indoor"
+  },
+  {
     "slug": "stadtbad-mitte-james-simon",
     "name": "Stadtbad Mitte \"James Simon\"",
     "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-mitte-james-simon/",
@@ -274,6 +322,22 @@
     "kind": "indoor"
   },
   {
+    "slug": "stadtbad-schoeneberg-hans-rosenthal",
+    "name": "Stadtbad Schöneberg \"Hans Rosenthal\"",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-schoeneberg-hans-rosenthal/",
+    "lat": 52.484775,
+    "lng": 13.350996,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-spandau-nord",
+    "name": "Stadtbad Spandau Nord",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-spandau-nord/",
+    "lat": 52.55475,
+    "lng": 13.194603,
+    "kind": "indoor"
+  },
+  {
     "slug": "stadtbad-tempelhof",
     "name": "Stadtbad Tempelhof",
     "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tempelhof/",
@@ -287,6 +351,14 @@
     "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-tiergarten/",
     "lat": 52.527428,
     "lng": 13.359621,
+    "kind": "indoor"
+  },
+  {
+    "slug": "stadtbad-wilmersdorf-i",
+    "name": "Stadtbad Wilmersdorf I",
+    "url": "https://www.berlinerbaeder.de/baeder/detail/stadtbad-wilmersdorf-i/",
+    "lat": 52.480529,
+    "lng": 13.314373,
     "kind": "indoor"
   },
   {

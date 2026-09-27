@@ -42,14 +42,20 @@ files, and berlinerbaeder.de blocks direct cross‑origin browser requests (no C
 refreshes the data every 30 minutes and commits it; each commit redeploys Pages, so visitors
 always get near‑current hours without any backend.
 
+The list of pools changes with the seasons (Sommerbäder vs. Hallenbäder) and renovations. If the
+timetable lists a pool that `data/pools-meta.json` doesn't know yet, the scraper reads its address
+from the pool's detail page, geocodes it via Nominatim and stores the position as `autoMeta` in
+`pools.json`, so the pool still shows up (and the workflow run gets a warning). Adding the pool to
+`pools-meta.json` then pins its exact position and category.
+
 ## Project layout
 
 | Path | Purpose |
 |------|---------|
 | `index.html`, `css/`, `js/` | the static app (ES modules, no build step) |
-| `data/pools.json` | **generated** opening hours (7‑day rolling window) — committed by CI |
+| `data/pools.json` | **generated** opening hours (rolling window, currently 14 days) — committed by CI |
 | `data/pools-meta.json` | hand‑curated: coordinates, official URL, category, `excluded` flag |
-| `scraper/scrape.mjs` | fetch + parse → writes `data/pools.json` |
+| `scraper/scrape.mjs` | fetch + parse (+ geocode pools missing from the metadata) → writes `data/pools.json` |
 | `.github/workflows/scrape.yml` | cron job that runs the scraper and commits changes |
 
 ## Deploy to GitHub Pages (free)
@@ -97,4 +103,5 @@ python3 -m http.server 8000
   [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
 - Step‑by‑step directions open in Google Maps (transit mode).
 
-Pool coordinates were geocoded via OpenStreetMap Nominatim and stored statically.
+Pool coordinates were geocoded via OpenStreetMap Nominatim and stored statically; pools not in
+`pools-meta.json` yet are geocoded the same way by the scraper.
