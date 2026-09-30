@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T08:50:34.220Z",
+  "generatedAt": "2026-09-30T15:33:58.858Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -18,7 +18,7 @@
     "2026-10-12",
     "2026-10-13"
   ],
-  "poolCount": 31,
+  "poolCount": 32,
   "pools": [
     {
       "slug": "kleine-schwimmhalle-wuhlheide",
@@ -329,10 +329,6 @@
             {
               "open": "06:30",
               "close": "15:30"
-            },
-            {
-              "open": "17:30",
-              "close": "21:00"
             }
           ]
         },
@@ -341,7 +337,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "21:00"
+              "close": "15:30"
             }
           ]
         },
@@ -350,7 +346,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "21:00"
+              "close": "15:30"
             }
           ]
         },
@@ -378,10 +374,6 @@
             {
               "open": "12:00",
               "close": "15:30"
-            },
-            {
-              "open": "17:30",
-              "close": "21:00"
             }
           ]
         },
@@ -390,7 +382,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "19:30"
+              "close": "15:30"
             }
           ]
         },
@@ -400,10 +392,6 @@
             {
               "open": "06:30",
               "close": "15:30"
-            },
-            {
-              "open": "17:30",
-              "close": "21:00"
             }
           ]
         },
@@ -412,7 +400,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "21:00"
+              "close": "15:30"
             }
           ]
         },
@@ -421,7 +409,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "21:00"
+              "close": "15:30"
             }
           ]
         },
@@ -449,10 +437,6 @@
             {
               "open": "12:00",
               "close": "15:30"
-            },
-            {
-              "open": "17:30",
-              "close": "21:00"
             }
           ]
         },
@@ -461,7 +445,7 @@
           "periods": [
             {
               "open": "06:30",
-              "close": "19:30"
+              "close": "15:30"
             }
           ]
         }
@@ -1990,6 +1974,89 @@
               "close": "08:00"
             }
           ]
+        }
+      ]
+    },
+    {
+      "slug": "schwimmhalle-kreuzberg",
+      "name": "Schwimmhalle Kreuzberg",
+      "url": "https://www.berlinerbaeder.de/baeder/detail/schwimmhalle-kreuzberg/",
+      "days": [
+        {
+          "date": "2026-09-30",
+          "periods": []
+        },
+        {
+          "date": "2026-10-01",
+          "periods": []
+        },
+        {
+          "date": "2026-10-02",
+          "periods": []
+        },
+        {
+          "date": "2026-10-03",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-04",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-05",
+          "periods": []
+        },
+        {
+          "date": "2026-10-06",
+          "periods": []
+        },
+        {
+          "date": "2026-10-07",
+          "periods": []
+        },
+        {
+          "date": "2026-10-08",
+          "periods": []
+        },
+        {
+          "date": "2026-10-09",
+          "periods": []
+        },
+        {
+          "date": "2026-10-10",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-11",
+          "periods": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-12",
+          "periods": []
+        },
+        {
+          "date": "2026-10-13",
+          "periods": []
         }
       ]
     },
