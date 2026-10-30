@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T09:32:32.645Z",
+  "generatedAt": "2026-10-30T16:30:12.166Z",
   "source": "https://www.berlinerbaeder.de/oeffnungszeiten-auf-einem-blick/",
   "timezone": "Europe/Berlin",
   "dates": [
@@ -3027,15 +3027,30 @@
         },
         {
           "date": "2026-11-02",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-11-03",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-11-04",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-11-05",
@@ -3047,23 +3062,48 @@
         },
         {
           "date": "2026-11-07",
-          "periods": []
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "15:00"
+            }
+          ]
         },
         {
           "date": "2026-11-08",
-          "periods": []
+          "periods": [
+            {
+              "open": "08:00",
+              "close": "15:00"
+            }
+          ]
         },
         {
           "date": "2026-11-09",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-11-10",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-11-11",
-          "periods": []
+          "periods": [
+            {
+              "open": "06:30",
+              "close": "22:00"
+            }
+          ]
         },
         {
           "date": "2026-11-12",
